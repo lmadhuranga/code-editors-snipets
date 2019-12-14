@@ -40,10 +40,11 @@
 			},
 		 
 			
-			"RefUrl": {
-				"prefix": "ssRef",
+			"Reffer": {
+				"prefix": "ssref",
 				"body": [
-					"// RefUrl:: $1"
+					"// $2", 
+					"// RrefUrl:: $1"
 				],
 				"description": "Function"
 			},
