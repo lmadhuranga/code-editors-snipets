@@ -39,6 +39,15 @@
 				"description": "Function"
 			},
 		 
+			
+			"RefUrl": {
+				"prefix": "ssRef",
+				"body": [
+					"// RefUrl:: $1"
+				],
+				"description": "Function"
+			},
+		 
 		
 			"${}": {
 				"prefix": "ssvar",
