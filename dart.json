@@ -16,7 +16,7 @@
 				"prefix": "clog",
 				"body": [
 					"print('mad_msg_$1');",
-					"print($1);"
+					"${2:print($1);}"
 				],
 				"description": "Log output to console"
 			},

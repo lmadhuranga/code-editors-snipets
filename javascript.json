@@ -74,9 +74,13 @@
 			},
 		
 		
-		
-		
-		
+			"Reffer": {
+				"prefix": "ssref",
+				"body": [
+					"// RrefUrl:: $1"
+				],
+				"description": "Function"
+			}, 		
 			
 			"It": {
 				"prefix": "sit",
