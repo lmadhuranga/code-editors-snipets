@@ -111,6 +111,24 @@
 				"description": "${}"
 			},
 
+//  ReactJS================================================== ReactJS==================================================
+"Print to console1": {
+  "prefix": "ssconstruct",
+  "body": [ 
+    "constructor(props) {",
+    " super(props);",
+    " this.state = {",
+    "   name:'',",
+    "   errors: {",
+    "     name:'', ",
+    "   }",
+    " };",
+    "//this.fun1 = this.fun1.bind(this);",
+   "}"
+  ],
+  "description": "Log output to console"
+},
+//  ReactJS-End================================================== ReactJS-End==================================================
 		
 //  Nodejs================================================== Nodejs==================================================
 			"nget": {
