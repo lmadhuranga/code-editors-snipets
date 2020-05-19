@@ -47,15 +47,15 @@
 				"description": "Import Config"
 			},
 		
-			"Import": {
+			"Import axios": {
 				"prefix": "simport",
 				"body": [
-					"import $2 from '$1';",
+					"import { ${1:axios} } from '$1';",
 					"$3"
 				],
-				"description": "Import helper"
+				"description": "Import plusin"
 			},
-			
+		 
 			"Function": {
 				"prefix": "sfun",
 				"body": [

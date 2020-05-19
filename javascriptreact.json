@@ -12,7 +12,12 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
-	
+	"Print to console": {
+		"prefix": "ssredirect",
+		"body": [
+			"this.props.history.push('/$1');"
+		],
+		"description": "Log output to console"
+	}
  
 }
