@@ -19,6 +19,14 @@
 				],
 				"description": "Log output to console"
 			},
+			
+			"White space": {
+				"prefix": "ssspage",
+				"body": [
+					" &nbsp; "
+				],
+				"description": "added &nbsp;"
+			},
 		
 			"Import Service": {
 				"prefix": "ssimpService",
@@ -50,10 +58,25 @@
 			"Import axios": {
 				"prefix": "simport",
 				"body": [
-					"import { ${1:axios} } from '$1';",
-					"$3"
+					"import ${1:axios} from '$1';"
 				],
 				"description": "Import plusin"
+			},
+
+			"Import helper utils": {
+				"prefix": "simport",
+				"body": [
+					"import ${1:utils} from '../helpers/$1';"
+				],
+				"description": "Import utils"
+			},
+
+			"const vars": {
+				"prefix": "ssconst",
+				"body": [
+					"const { ${1:data} }  = ${2:response}"
+				],
+				"description": "const vars"
 			},
 		 
 			"Function": {
