@@ -23,7 +23,7 @@
 			"White space": {
 				"prefix": "ssspage",
 				"body": [
-					" &nbsp; "
+					"&nbsp; $1"
 				],
 				"description": "added &nbsp;"
 			},
