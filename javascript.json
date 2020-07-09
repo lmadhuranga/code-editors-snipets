@@ -74,7 +74,7 @@
 			"const vars": {
 				"prefix": "ssconst",
 				"body": [
-					"const { ${1:data} }  = ${2:response}"
+					"const { ${1:data} }  = ${2:this.state}"
 				],
 				"description": "const vars"
 			},
