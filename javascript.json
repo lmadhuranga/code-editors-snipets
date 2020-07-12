@@ -12,12 +12,46 @@
 			// 	],
 			// 	"description": "Log output to console"
 			// }
+			"es6 Function": {
+				"prefix": "ssfuntion",
+				"body": [
+					"const ${1:funName} = ($2) => {$3}"
+				],
+				"description": "Funciton for es6"
+			},
+			
 			"Print to console": {
 				"prefix": "clog",
 				"body": [
 					"console.log('$1'${2:,$1});"
 				],
 				"description": "Log output to console"
+			},
+			
+			"jQUwey redy": {
+				"prefix": "ready",
+				"body": [
+					"$( document ).ready(function() {",
+				  "$1",
+					"});"
+				],
+				"description": "Log output to console"
+			},
+			
+			"Event Prevent default": {
+				"prefix": "sseventPrevent",
+				"body": [
+					"event.preventDefault();"
+				],
+				"description": "event prevent default"
+			},
+			
+			"Set Satate": {
+				"prefix": "sssetstate",
+				"body": [
+					"this.state({$1});"
+				],
+				"description": "Set Satate"
 			},
 			
 			"White space": {
