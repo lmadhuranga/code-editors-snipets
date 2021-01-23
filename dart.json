@@ -15,8 +15,14 @@
 			"Print to console": {
 				"prefix": "clog",
 				"body": [
-					"print('mad_msg_$1');",
-					"${2:print($1);}"
+					"print('mad_msg_: ${${1}} <= ${2:$1} ');",
+				],
+				"description": "Log output to console"
+			},
+			"Debug print": {
+				"prefix": "clogd",
+				"body": [
+					"debugPrint('mad_msg_: ${${1}} <= ${2:$1} ');",
 				],
 				"description": "Log output to console"
 			},
@@ -57,4 +63,361 @@
 				],
 				"description": "${}"
 			},
+		
+			"SizedBox": {
+				"prefix": "ssizeBox",
+				"body": [
+					"SizedBox(height: ${1:20}.0,),",
+				],
+				"description": "Size box "
+			},
+		
+			"Padding": {
+				"prefix": "ssPadding",
+				"body": [
+					"Padding(",
+					"  padding: EdgeInsets.${2:only}(${3:left: ${4:4}.0, right: ${4:4}.0, top: ${4:4}.0, bottom: ${4:4}.0}),",
+					"  child: ${5:Container}($6),",
+					")",
+				],
+				"description": "Padding"
+			}, 
+		
+			"PaddingOnly": {
+				"prefix": "ssPaddingOnly",
+				"body": [
+					"padding: EdgeInsets.only(left: ${1:4}.0, right: ${1:4}.0, top: ${1:4}.0, bottom: ${1:4}.0),",
+				],
+				"description": "PaddingOnly"
+			}, 
+
+			"Devive Width Height": {
+				"prefix": "ssWidtHeight",
+				"body": [
+					"var sWidth  = MediaQuery.of(context).size.width;",
+					"var sHeight  = MediaQuery.of(context).size.height;",
+				],
+				"description": "Devive Width Height"
+			},
+
+			"Default font": {
+				"prefix": "ssFont",
+				"body": [
+					"var dFont = 'Montserrat';", 
+				],
+				"description": "Default font"
+			},
+		
+			"TExt": {
+				"prefix": "ssText",
+				"body": [
+					"Text(",
+          "  '${1:text}',",
+          "  style: TextStyle(",
+          "    fontFamily: '${2:Varela}',",
+          "    fontWeight: FontWeight.${3:bold},",
+          "    fontSize: ${4:20}.0,",
+          "    color: ${5:Color(0xFF${6:545D68})},",
+          "  ),",
+        "),",
+				],
+				"description": "Sstext with color font family "
+			},
+		
+			"Hero": {
+				"prefix": "ssHero",
+				"body": [
+					"Hero(",
+					"  tag: ${1:assetPath},",
+					"  child: Image.asset(",
+					"    ${2:assetPath},",
+					"    height: ${3:150}.0,",
+					"    width: ${4:100}.0,",
+					"    fit: BoxFit.${5:contain},",
+					"  ),",
+					"),",
+				],
+				"description": "hero "
+			},
+		
+			"Navigate Page": {
+				"prefix": "ssNavigateToNext",
+				"body": [
+					"Navigator.of(context).push(",
+					"  MaterialPageRoute(",
+					"    builder: (context) => ${1:NextPage}($2)",
+					"  )",
+					");",
+				],
+				"description": "Navigation page "
+			},
+		
+			"Navigate Pop": {
+				"prefix": "ssnavigatePop",
+				"body": [
+					"Navigator.of(context).pop();",
+				],
+				"description": "Navigation pop "
+			},
+		
+			"Cnter": {
+				"prefix": "ssCenter",
+				"body": [
+					"Center(",
+					"  child: ${1:Text('text')}",
+					")",
+				],
+				"description": "Navigation page "
+			},
+
+			"Color": {
+				"prefix": "ssColor",
+				"body": [
+					"color: Color(0xFF$1),",
+				],
+				"description": "Color"
+			},
+
+			"Main Asis Aliment": {
+				"prefix": "ssmainAxisAlignment",
+				"body": [
+					"mainAxisAlignment: MainAxisAlignment.${1:spaceBetween},",
+				],
+				"description": "Main Asis Aliment"
+			},
+
+			"BoxDecoration": {
+				"prefix": "ssBoxDecoration",
+				"body": [
+					"decoration: BoxDecoration(",
+          "  image: DecorationImage(",
+          "    image: AssetImage(${1:'assets/${2:img.jpg}'}),",
+          "    fit: BoxFit.${3:cover}",
+          "  ),",
+          "),",
+				],
+				"description": "BoxDecoration"
+			},
+
+			"BoxDecoration Color": {
+				"prefix": "ssBoxDecorationColor",
+				"body": [
+					"decoration: BoxDecoration(",
+          "\t\tcolor: $1,",
+          "),",
+				],
+				"description": "BoxDecoration Color"
+			},
+			
+			"BoxDecoration borderRadius": {
+				"prefix": "ssborderRadiusBoxDecoration",
+				"body": [
+					"decoration: BoxDecoration(",
+          "  borderRadius: BorderRadius.circular(${1:20}.0),",
+          "  ${2:color: Color(0xFF${3:20D3D2}),}",
+          "),",
+				],
+				"description": "BoxDecoration borderRadius"
+			},
+
+			"Print": {
+				"prefix": "ssprint",
+				"body": [
+					"print('$1');",
+				],
+				"description": "Print"
+			},
+
+			"borderRadius": {
+				"prefix": "ssborderRadius",
+				"body": [
+					"borderRadius: BorderRadius.${1:circular}(${2:25.0}),",
+				],
+				"description": "borderRadius"
+			},
+
+			"IconButton": {
+				"prefix": "ssIconButton",
+				"body": [
+					"IconButton(",
+					"  icon: Icon(Icons.${1:favorite_border}),",
+					"  iconSize: 30.0,",
+					"  color: Color(0xFF${2:322F2E}),",
+					"  onPressed:(){},",
+					"),",
+				],
+				"description": "IconButton"
+			},
+			"Container": {
+				"prefix": "ssContainer",
+				"body": [
+					"Container(",
+					"  ${1:height:${2:250.0}},",
+					"  ${3:child: $4,",
+					"  $5}",
+					")",
+				],
+				"description": "Container"
+			},
+			
+			"Scaffold": {
+				"prefix": "ssScaffold",
+				"body": [
+					"Scaffold(",
+					"  body: ${1:Container($2),}",
+					"),",
+				],
+				"description": "Scaffold"
+			},
+			
+			"Image Asset": {
+				"prefix": "ssImageAsset",
+				"body": [
+					"Image(",
+					"  image: AssetImage('$1'),",
+					"  height: ${2:60}.0,",
+					"  width: ${2:150}.0,",
+					")",
+				],
+				"description": "Image Asset"
+			},
+			
+			
+			"Aligment": {
+				"prefix": "ssAlign",
+				"body": [
+					"Align(",
+					"  alignment: Alignment.${1:bottomCenter},",
+					"  child: ${2:Container($3)},",
+					")",
+				],
+				"description": "Aligment"
+			},
+			
+			"Row": {
+				"prefix": "ssRow",
+				"body": [
+					"Row(",
+					"  ${1:children: [$2],",
+					"  $3}",
+					")",
+				],
+				"description": "Row"
+			},
+			
+			"Row;": {
+				"prefix": "ssRow;",
+				"body": [
+					"Row(",
+					"  ${1:children: [$2],",
+					"  $3}",
+					");",
+				],
+				"description": "Row;"
+			},
+			
+			"Row,": {
+				"prefix": "ssRow,",
+				"body": [
+					"Row(",
+					"  ${1:children: [$2],",
+					"  $3}",
+					"),",
+				],
+				"description": "Row,"
+			},
+			
+			
+			"Column": {
+				"prefix": "ssColumn",
+				"body": [
+					"Column(",
+					"  ${1:children: [$2],",
+					"  $3}",
+					")",
+				],
+				"description": "Column"
+			},
+			
+			"boxShadow": {
+				"prefix": "ssboxShadow",
+				"body": [
+					"boxShadow: [",
+					"  BoxShadow(",
+					"    blurRadius: ${1:4.0},",
+					"    spreadRadius: ${2:3.0},",
+					"    color: Color(0xFF${3:D1C0B9}),",
+					"    offset: Offset(0.0, 2.0)",
+					"  )",
+					"],",
+				],
+				"description": "boxShadow"
+			},
+
+			"positioned": {
+				"prefix": "sspositioned",
+				"body": [
+					"Positioned(",
+					"  ${1:left: ${2:0}.0,",
+					"  right: ${3:0}.0,}",
+					"  child: ${4:Container($5)},",
+					"),",
+				],
+				"description": "positioned"
+			},
+
+			"InkWell": {
+				"prefix": "ssInkWell",
+				"body": [
+					"InkWell(", 
+					"  onTap: (){$2},",
+					"  child: ${3:Container($4)},",
+					");",
+				],
+				"description": "InkWell"
+			},
+			"initState": {
+				"prefix": "ssinitState",
+				"body": [
+					"@override",
+					"void initState() {$1}",
+				],
+				"description": "initState"
+			},
+
+			"onTap: (){},": {
+				"prefix": "ssTap",
+				"body": [
+					"onTap: (){$1},",
+				],
+				"description": "onTap: (){},"
+			},
+
+			"gradient button": {
+				"prefix": "ssGradient Button",
+				"body": [
+					"Container(",
+					"\tmargin: EdgeInsets.all(20),",
+					"\twidth: 200,",
+					"\theight: 50,",
+					"\tdecoration: BoxDecoration(",
+					"\t\tgradient: LinearGradient(",
+					"\t\t\tcolors: [Colors.red, Colors.blue],",
+					"\t\t\tbegin: FractionalOffset.centerLeft,",
+					"\t\t\t\tend: FractionalOffset.centerRight,",
+					"\t\t\t),",
+					"\t\t),",
+					"\t\tchild: FlatButton(",
+					"\t\tchild: Text(",
+					"\t\t\t'Login',",
+					"\t\t\tstyle: TextStyle(color: Colors.white),",
+					"\t\t),",
+					"\t\tonPressed: () {},",
+					"\t),",
+				"),",
+				],
+				"description": "gradient flat button"
+			},
+
+			
 }

@@ -26,5 +26,34 @@
 				"</html>",
 		],
 		"description": "Get html with jquery"
+	},
+	"Commnet": {
+		"prefix": ["comment", "cc"],
+		"body": [
+				"<!-- $1 -->",
+		],
+		"description": "Comment"
+	},
+	"angular html error": {
+		"prefix": ["sserror"],
+		"body": [
+			"<div *ngIf='${1:f}.${2:fname}.touched && ${1:f}.${2:fname}.invalid' class='alert alert-danger'>",
+			"\t<div *ngIf='${1:f}.${2:fname}.errors.required'>${3:First name} is required.</div>",
+			"\t<div *ngIf='${1:f}.${2:fname}.errors.minlength'>${3:First name} should be 3 character.</div>",
+			"\t<div *ngIf='${1:f}.${2:fname}.errors.maxlength'>${3:First name} should be 10 character.</div>",
+			"</div>" ,
+		],
+		"description": "Comment"
+	},
+	"Div with comment": {
+		"prefix": "ssdiv",
+		"body": ["<div class='$1'>$2</div><!-- $1 -->"],
+		"description": "Div with comment"
+	
+	},
+	"NBSP": {
+		"prefix": "ssnbsp",
+		"body": ["&nbsp;"],
+		"description": "NBSP"
 	}
 }

@@ -12,6 +12,22 @@
 			// 	],
 			// 	"description": "Log output to console"
 			// }
+			"sslocalnic": {
+				"prefix": "sslocalnic",
+				"body": [
+					"this.localData.get('userData','nic');"
+				],
+				"description": "userData nic"
+			},
+			
+			"sslocalData init": {
+				"prefix": "sslocalinit",
+				"body": [
+					"private localData: ${1:LocalstorageService},"
+				],
+				"description": "Local storage service"
+			},
+
 	"Print to console": {
 		"prefix": "clog",
 		"body": [
@@ -57,7 +73,7 @@
 	},
 	
 	"Function": {
-		"prefix": "sfun",
+		"prefix": "ssfun",
 		"body": [
 			"$1($2){$3}"
 		],
@@ -73,7 +89,22 @@
 		"description": "Function"
 	},
 
-
+	"Print to console1": {
+		"prefix": "ssconstruct",
+		"body": [ 
+			"constructor(props) {",
+			" super(props);",
+			" this.state = {",
+			"   name:'',",
+			"   errors: {",
+			"     name:'', ",
+			"   }",
+			" };",
+			"//this.fun1 = this.fun1.bind(this);",
+		 "}"
+		],
+		"description": "Log output to console"
+	},
 
 
 

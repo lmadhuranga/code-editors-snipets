@@ -12,7 +12,23 @@
 			// 	],
 			// 	"description": "Log output to console"
 			// }
-			"es6 Function": {
+			
+			"sslocalnic": {
+				"prefix": "sslocalnic",
+				"body": [
+					"this.localData.get('userData','nic');"
+				],
+				"description": "userData nic"
+			},
+			"sslocalData init": {
+				"prefix": "sslocalinit",
+				"body": [
+					"private localData: ${1:LocalstorageService},"
+				],
+				"description": "Local storage service"
+			},
+			
+			"": {
 				"prefix": "ssfuntion",
 				"body": [
 					"const ${1:funName} = ($2) => {$3}"
@@ -20,10 +36,39 @@
 				"description": "Funciton for es6"
 			},
 			
+			"Section End comment": {
+				"prefix": "ssSection",
+				"body": [
+					"//  ${1:fname} ++++++++++++++++++++++++++++++++++++++++++++ ${1:fname} ++++++++++++++++++++++++++++++++++++++++++++",
+					"$2",
+					"//  ${1:fname} ............................................. ${1:fname} ............................................."
+				],
+				"description": "Section End comment"
+			},
+			
 			"Print to console": {
 				"prefix": "clog",
 				"body": [
-					"console.log(`$1`${2:,$1});"
+					"console.log(`msg_$1`${2:,$1});"
+				],
+				"description": "Log output to console"
+			},
+			
+			
+			"jqeyr event": {
+				"prefix": "ssthi",
+				"body": [
+					"$(this).${1:click}(function() {",
+					"$2console.log('msg_event_triggered ${1:click}');",
+					"});"
+				],
+				"description": "jqeyr event"
+			},
+			
+			"document query": {
+				"prefix": "ssquerySelect",
+				"body": [
+					"document.querySelector(`$1`)"
 				],
 				"description": "Log output to console"
 			},
