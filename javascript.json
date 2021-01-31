@@ -12,6 +12,21 @@
 			// 	],
 			// 	"description": "Log output to console"
 			// }
+
+			"wrap with ${}": {
+				"prefix": "$$",
+				"body": [
+					"${ ${TM_SELECTED_TEXT} }",
+				],
+				"description": "wrap with ${}"
+			},
+			"wrap with `${}`": {
+				"prefix": "$$$",
+				"body": [
+					"`${ ${TM_SELECTED_TEXT} }`",
+				],
+				"description": "wrap with ${}"
+			},
 			
 			"sslocalnic": {
 				"prefix": "sslocalnic",
@@ -28,12 +43,12 @@
 				"description": "Local storage service"
 			},
 			
-			"": {
+			"old function": {
 				"prefix": "ssfuntion",
 				"body": [
-					"const ${1:funName} = ($2) => {$3}"
+					"function ${1:funName}($2){$3}"
 				],
-				"description": "Funciton for es6"
+				"description": "old function"
 			},
 			
 			"Section End comment": {
