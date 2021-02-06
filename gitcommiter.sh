@@ -4,6 +4,6 @@ echo "commit msg"
 
 read msg
 
-git add . && git commit -am "${msg}" && git push origin master
+git add . && git commit -am "feature added ${msg}" && git push origin master
 
 pause 
