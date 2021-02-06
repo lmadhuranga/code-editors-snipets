@@ -13,6 +13,13 @@
 			// 	"description": "Log output to console"
 			// }
 
+			"logger": {
+				"prefix": "sslog",
+				"body": [
+					"logger(`img uploader imgTYpe : ${} `, err)",
+				],
+				"description": "logger"
+			},
 			"wrap with ${}": {
 				"prefix": "$$",
 				"body": [
@@ -59,6 +66,17 @@
 					"//  ${1:fname} ............................................. ${1:fname} ............................................."
 				],
 				"description": "Section End comment"
+			},
+			
+			
+			"Function description": {
+				"prefix": "ssSection",
+				"body": [
+					"*********************************************************************************************************************",
+					"/* ----------------- formContactInfo ------------------------  form */",
+					"*********************************************************************************************************************",
+				],
+				"description": "Function description"
 			},
 			
 			"Print to console": {

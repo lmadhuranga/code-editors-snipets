@@ -12,6 +12,14 @@
 			// 	],
 			// 	"description": "Log output to console"
 			// }
+			
+			"logger": {
+				"prefix": "sslog",
+				"body": [
+					"logger(`img uploader imgTYpe : ${} `, err)",
+				],
+				"description": "logger"
+			},
 			"sslocalnic": {
 				"prefix": "sslocalnic",
 				"body": [
