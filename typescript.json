@@ -12,7 +12,27 @@
 			// 	],
 			// 	"description": "Log output to console"
 			// }
-			
+			"wrap withs `${}`": {
+				"prefix": "$$$",
+				"body": [
+					"`${ ${TM_SELECTED_TEXT} }`",
+				],
+				"description": "wrap with `${}`"
+			},
+			"display none if contion": {
+				"prefix": "ssDisplaynone",
+				"body": [
+					"[ngStyle]=\"{display: (isFormHide==false)?'none':''}\"",
+				],
+				"description": "display none if contion`"
+			},
+			"wrap with ${}": {
+				"prefix": "$$",
+				"body": [
+					"${ ${TM_SELECTED_TEXT} }",
+				],
+				"description": "wrap with ${}"
+			},
 			"logger": {
 				"prefix": "sslog",
 				"body": [

@@ -48,8 +48,7 @@
 	"Div with comment": {
 		"prefix": "ssdiv",
 		"body": ["<div class='$1'>$2</div><!-- $1 -->"],
-		"description": "Div with comment"
-	
+		"description": "Div with comment" 
 	},
 	"NBSP": {
 		"prefix": "ssnbsp",

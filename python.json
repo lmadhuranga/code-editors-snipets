@@ -11,4 +11,100 @@
 		],
 		"description": "Log output to console"
 	},
+	"Single line if": {
+		"prefix": "ssif",
+		"body": [
+			"'${1:Yes}' if fruit == 'Apple' else 'No'"
+		],
+		"description": "Single line if"
+	}, 
+	"imgLeft": {
+		"prefix": "wpLeft",
+		"body": [
+			"\"headerOption\": {",
+			"\t\"position\"    : (40,55),",
+			"},",
+			"\"subHeaderOption1\": {",
+			"\t\"position\"    : (40,155),",
+			"},"
+		],
+		"description": "imgLeft", 
+	},
+	"imgLeftTop": {
+		"prefix": "wpLeftTop",
+		"body": [
+			"\"headerOption\": {",
+			"\t\"position\"    : (30,-10),",
+			"},",
+			"\"subHeaderOption1\": {",
+			"\t\"position\"    : (30,90),",
+			"},"
+		],
+		"description": "imgLeftTop"
+	},
+	"imgLeftBttom": {
+		"prefix": "wpLeftBtom",
+		"body": [
+			"\"headerOption\": {",
+			"\t\"position\"    : (40,150),",
+			"},",
+			"\"subHeaderOption1\": {",
+			"\t\"position\"    : (40,250),",
+			"},"
+		],
+		"description": "imgLeftBtom"
+	},
+ 
+	"imgRight": {
+		"prefix": "wpRight",
+		"body": [
+			"\"headerOption\": {",
+			"\t\"position\"    : (250,55),",
+			"},",
+			"\"subHeaderOption1\": {",
+			"\t\"position\"    : (250,155),",
+			"},"
+		],
+		"description": "imgRight", 
+	},
+	"imgRightTop": {
+		"prefix": "wpRightTop",
+		"body": [
+			"\"headerOption\": {",
+			"\t\"position\"    : (250,-10),",
+			"},",
+			"\"subHeaderOption1\": {",
+			"\t\"position\"    : (250,90),",
+			"},"
+		],
+		"description": "imgRightTop"
+	},
+	"imgRightBttom": {
+		"prefix": "wpRightBtom",
+		"body": [
+			"\"headerOption\": {",
+			"\t\"position\"    : (250,150),",
+			"},",
+			"\"subHeaderOption1\": {",
+			"\t\"position\"    : (250,150),",
+			"},"
+		],
+		"description": "imgRightBtom"
+	},
+	"Todo": {
+		"prefix": "ssTodo",
+		"body": [
+			"# Todo:: $1"
+		],
+		"description": "Todo"
+	},
+	"For": {
+		"prefix": "ssFor",
+		"body": [
+			"for ${2:x} in ${1:dataArr}:",
+			"print(${2:x})"
+		],
+		"description": "For"
+	},
+ 
 }
