@@ -19,25 +19,18 @@
 					"logger(`img uploader imgTYpe : ${} `, err)",
 				],
 				"description": "logger"
-			},
-			"wrap withs `${}`": {
-				"prefix": "$$$",
-				"body": [
-					"`${ ${TM_SELECTED_TEXT} }`",
-				],
-				"description": "wrap with `${}`"
-			},
+			}, 
 			"wrap with ${}": {
 				"prefix": "$$",
 				"body": [
-					"${ ${TM_SELECTED_TEXT} }",
+					"${ ${TM_SELECTED_TEXT}$1 }",
 				],
 				"description": "wrap with ${}"
 			},
-			"wrap with `${}`": {
+			"wrap with Quotes `${}`": {
 				"prefix": "$$$",
 				"body": [
-					"`${ ${TM_SELECTED_TEXT} }`",
+					"`${ ${TM_SELECTED_TEXT}$1 }`",
 				],
 				"description": "wrap with ${}"
 			},
@@ -275,6 +268,31 @@
 	"prefix": "ssdiv",
 	"body": ["<div className='$1'>$2</div>"],
 	"description": "Div with comment" 
+},
+"NBSP": {
+	"prefix": "ssnbsp",
+	"body": ["&nbsp;"],
+	"description": "NBSP"
+},
+"const ${1:var1} = $1": {
+	"prefix": "constvar",
+	"body": ["const ${1:var1} = $1"],
+	"description": "const ${1:var1} = $1"
+},
+"export const var1 = () => {}": {
+	"prefix": "econstfun",
+	"body": ["export const ${1:var1} = ($2) => {$3}"],
+	"description": "export const var1 = () => {}"
+},
+"const var1 = () => {}": {
+	"prefix": "constfun",
+	"body": ["const ${1:var1} = ($2) => {$3}"],
+	"description": "const var1 = () => {}"
+},
+"return var1; ": {
+	"prefix": "return_var",
+	"body": ["return ${var1}; "],
+	"description": "return var1; "
 },
 //  ReactJS-End================================================== ReactJS-End==================================================
 		
