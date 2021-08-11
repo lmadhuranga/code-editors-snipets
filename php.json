@@ -10,5 +10,12 @@
 			"var_dump($1, __LINE__);"
 		],
 		"description": "var dump"
+	},
+	"var dump with exit": {
+		"prefix": "ssevar",
+		"body": [
+			"var_dump(${1:\"$2\"}, \"Var Exit line : \".__LINE__); exit();"
+		],
+		"description": "var dump"
 	}
 }
