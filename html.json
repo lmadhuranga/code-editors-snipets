@@ -54,5 +54,13 @@
 		"prefix": "ssnbsp",
 		"body": ["&nbsp;"],
 		"description": "NBSP"
-	}
+	},
+	"translate": {
+		"prefix": "sstrans",
+		"body": [
+			"<app-trans text='${1:msg}'></app-trans>"
+		],
+		"description": "Added custom translate"
+	},
+ 
 }
