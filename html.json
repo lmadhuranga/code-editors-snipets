@@ -58,7 +58,7 @@
 	"translate": {
 		"prefix": "sstrans",
 		"body": [
-			"<app-trans text='${1:msg}'></app-trans>"
+			"<app-trans text='${1:msg}' ></app-trans>"
 		],
 		"description": "Added custom translate"
 	},
